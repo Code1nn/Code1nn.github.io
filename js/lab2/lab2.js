@@ -1,8 +1,18 @@
 'use strict';
+/**
+ * возводит x в n-ю степень
+ * @param {nuber} x основание
+ * @param {number} n степень
+ * @returns x^n
+ */
 function pow(x,n){
   return x**n;  
 }
-
+/**
+ * сумма всех чисел от 1 до n
+ * @param {number} n предел суммирования
+ * @returns 1+2+...+n
+ */
 function sumTo(n){
   let sum=0;
   for(let i=1;i<=n;i++){
@@ -10,14 +20,22 @@ function sumTo(n){
   }
   return sum;
 }
-
+/**
+ * факториал числа n
+ * @param {number} n основание факториала
+ * @returns n!
+ */
 function factorial(n){
  if(n>0)
    return (n*factorial(n-1));
    else 
      return 1;
   }
-
+/**
+ * находит n член последовательности Фибоначи
+ * @param {number} n номер члена последовательности
+ * @returns FIB[n]
+ */
  function fib(n) {
   let a = 1;
   let b = 1;
@@ -31,7 +49,11 @@ function factorial(n){
   }
   return b;
 }
-
+/**
+ * сравнение х с y
+ * @param {number} x 
+ * @returns y>x?
+ */
 function compare(x){
   let res=function(){
     let y=prompt('Введите число y');
@@ -43,6 +65,11 @@ function compare(x){
   return res();
   
 }
+/**
+ * рисует таблицу с cols столбцов до числа x
+ * @param {number} num конечное число
+ * @param {number} cols кол-во столбцов
+ */
 function printNumbers(num,cols) {
   let rows;
   let str;
@@ -53,9 +80,10 @@ function printNumbers(num,cols) {
 	  for(j=0; j<cols; j++){
 		  str+=k+" ";
 		  k++;
-		  if (k==num) break;
+		  if (k>=num) break;
 	  }
 	  console.log(str);
           str="";
   }
   }
+// pow(2, 2)
