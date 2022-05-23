@@ -19,8 +19,8 @@ function factorial(n){
   }
 
  function fib(n) {
-  let a = 1n;
-  let b = 1n;
+  let a = 1;
+  let b = 1;
  if (n==0) return 0;
  if (n==1) return 1;
  if (n==2) return 1;
@@ -43,3 +43,19 @@ function compare(x){
   return res();
   
 }
+function printNumbers(num,cols) {
+  let rows;
+  let str;
+  let k=0;
+  if (num % cols ==0) rows = num/cols;
+	else rows = (Math.trunc(num/cols) + 1);
+  for(i=0; i<rows; i++){
+	  for(j=0; j<cols; j++){
+		  str+=k+" ";
+		  k++;
+		  if (k==num) break;
+	  }
+	  console.log(str);
+          str="";
+  }
+  }
