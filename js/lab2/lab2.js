@@ -86,4 +86,3 @@ function printNumbers(num,cols) {
           str="";
   }
   }
-// pow(2, 2)
