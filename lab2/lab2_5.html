@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<head lang="ru">
 <meta charset="utf-8">
 <title>Форма</title>
 <style>
@@ -36,19 +36,19 @@ td, th {
              и по крайней мере 8 символов(все буквы латинского алфавита)" required></td>
 		</tr>
 		<tr>
-			<td><label for="Gender">Пол</label></td>
+			<td><label for="gender">Пол</label></td>
 			<td><input type="radio" id="gender1"
      		name="contact" value="male" checked>
-    		<label for="gender1">Мужчина</label>
+    		<label id="gender">Мужчина</label>
 
 		<input type="radio" id="gender2"
      		name="contact" value="female">
-    		<label for="gender2">Женщина</label></td>
+    		<label id="gender">Женщина</label></td>
 		</tr>
 		
 		<tr>
 			<td><label for="age">Год рождения</label></td>
-			<td><select>
+			<td><select id=age>
 				<option>1981</option>
 				<option>1982</option>
 				<option>1983</option>
@@ -88,7 +88,7 @@ td, th {
 		</tr>
 		<tr>
 			<td><label for="comments">О себе</label></td>
-			<td><textarea id="comments"placeholder="Напишите коротко о себе"></textarea></td>
+			<td><textarea id="comments" placeholder="Напишите коротко о себе"></textarea></td>
 		</tr>
 		<tr>
 			<td><input type="submit" value="Отправить информацию"></td>
