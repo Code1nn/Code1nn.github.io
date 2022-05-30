@@ -5,7 +5,9 @@
 .layer1 {
 font-family: sans-serif;
 color: #ff0000;
+   text-align: right;
 }
 .layer2 {
+   text-align: right;
 color: #008000;
 }
