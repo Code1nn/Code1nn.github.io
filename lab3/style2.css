@@ -1,6 +1,7 @@
 body {
     background-image: url(white-circle.png);
-    color: #ffffff; 
+    color: #ffffff;
+	text-align: right;
 }
 .layer1 {
 	font-family: Roboto, sans-serif;
