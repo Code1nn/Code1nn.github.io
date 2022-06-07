@@ -12,8 +12,6 @@ function getDecimal(num) {
 function ucFirst(str) {
     return (str[0].toUpperCase() + str.slice(1));
 }
-let str = prompt("Введи строку");
-alert(ucFirst(str));
 
 function checkSpam(str) {
     str = str.toLowerCase();
@@ -64,7 +62,7 @@ function camelize(str) {
     return str;
  }
 function arrReverseSorted(arr){
-arr_reserve=[];
+let arr_reserve=[];
 
 arr_reserve=arr.sort((a, b) => b - a);
 
