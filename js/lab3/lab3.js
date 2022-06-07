@@ -60,8 +60,9 @@ function camelize(str) {
                 str += a[p] + ' ';
             }
     else str = NaN;
- }
+ 
     return str;
+ }
 function arrReverseSorted(arr){
 arr_reserve=[];
 
