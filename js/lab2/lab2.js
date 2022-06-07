@@ -72,6 +72,7 @@ function compare(x){
 function printNumbers(num,cols) {
   let rows;
   let str;
+  let i;
   let k=0;
   if (num % cols ==0) rows = num/cols;
 	else rows = (Math.trunc(num/cols) + 1);
