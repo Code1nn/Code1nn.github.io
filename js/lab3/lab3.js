@@ -1,4 +1,9 @@
 'use strict';
+/**
+ * возвращает дробную часть х
+ * @param {nuber} x число
+ * @returns number
+ */
 function getDecimal(num) {
     let a = num.slice(num.indexOf('.'));
     if (num.indexOf(".") == -1) {
@@ -11,24 +16,41 @@ function getDecimal(num) {
     }
     return str;
 }
-
+/**
+ * возвращает строку с заглавным первым символом
+ * @param {string} str строка
+ * @returns string
+ */
 function ucFirst(str) {
     return (str[0].toUpperCase() + str.slice(1));
 }
-
+/**
+ * проверяет на наличие ххх и viagra
+ * @param {string} str строка
+ * @returns bool
+ */
 function checkSpam(str) {
     str = str.toLowerCase();
     if ((str.includes('xxx')) || (str.includes('viagra')))
         return true;
     else return false;
 }
-
+/**
+ * сокращает строчку до макс знаков, ставит ... в конце
+ * @param {string} str строка
+ * @param {number} maxlength длинна строки
+ * @returns bool
+ */
 function truncate(str, maxlength) {
     if (str.length > maxlength)
         str = str.slice(0, maxlength - 1) + '\u{2026}';
     return str;
 }
-
+/**
+ * возвращает строку без -
+ * @param {string} str строка
+ * @returns string
+ */
 function camelize(str) {
     let id;
     while (str.includes("-")) {
@@ -37,7 +59,12 @@ function camelize(str) {
     }
     return str;
 }
-       function fib(p){
+/**
+ * возвращает число последовательности фиббоначи
+ * @param {number} p номер числа фиббоначи
+ * @returns number
+ */
+ function fib(p){
         let a = 0;
         let b = 1;
         //Исключения
@@ -50,6 +77,11 @@ function camelize(str) {
         }
         return b;
       }
+/**
+ * возвращает массив заполненый числами фиббоначи до n-1'го номера
+ * @param {number} N номер числа фиббоначи
+ * @returns string
+ */
  function fibs(N) {
     let a = [];
     let str = '';
@@ -64,6 +96,11 @@ function camelize(str) {
  
     return str;
  }
+/**
+ * возвращает reverse массив
+ * @param {array} arr неупорядочный массив чисел
+ * @returns array
+ */
 function arrReverseSorted(arr){
 let arr_reserve=[];
 
@@ -71,7 +108,10 @@ arr_reserve=arr.sort((a, b) => b - a);
 
 alert(arr_reserve);
 }
-
+/**
+ * возвращает сумму всех аргументов
+ * @returns number
+ */
 function sum() {
     let result = 0;
   
