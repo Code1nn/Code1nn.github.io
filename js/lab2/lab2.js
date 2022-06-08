@@ -37,8 +37,8 @@ function factorial(n){
  * @returns FIB[n]
  */
  function fib(n) {
-  let a = 0;
-  let b = 1;
+  let a = 0n;
+  let b = 1n;
  if (n==0) return a;
  if (n==1) return b;
   for (let i = 2; i <= n; i++) {
