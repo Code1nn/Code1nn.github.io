@@ -55,7 +55,7 @@ function factorial(n){
  */
 function compare(x){
   let res=function(){
-    let y=prompt('Введите число y');
+    let y=5;
     if (y>x) return true
       else if (y<x) return false
 	else return null;
