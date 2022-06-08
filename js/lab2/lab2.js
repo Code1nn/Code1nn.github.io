@@ -61,7 +61,7 @@ function compare(x){
 	else return null;
     
   })()
-  return res();
+  return res;
   
 }
 /**
