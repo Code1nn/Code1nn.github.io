@@ -74,15 +74,17 @@ function printNumbers(num,cols) {
   let str="";
   let i;
   let j;
-  let k=0;
+  let k;
   if (num % cols ==0) rows = num/cols;
 	else rows = (Math.trunc(num/cols) + 1);
-  for(i=1; i<=rows; i++){
-	  for(j=1; j<=cols; j++){
-		  str+=k+" ";
-		  k++;
+  for(i=0; i<rows; i++){
+	  k=i;
+	  for(j=0; j<cols; j++){
+		  str+=(k)+" ";
+		  k+=rows;
 		  if (k>=num) break;
 	  }
+	  
 	  console.log(str);
           str="";
   }
