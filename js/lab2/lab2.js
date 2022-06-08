@@ -54,8 +54,8 @@ function factorial(n){
  * @returns y>x?
  */
 function compare(x){
-  let y=prompt("введите число У");
-  let res=(function(y){
+  let res=(function(){
+    let y=5;
     if (y>x) return true
       else if (y<x) return false
 	else return null;
