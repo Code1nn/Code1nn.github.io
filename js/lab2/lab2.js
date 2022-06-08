@@ -54,13 +54,12 @@ function factorial(n){
  * @returns y>x?
  */
 function compare(x){
-  let res=(function(){
-    let y=5;
+  let res=(function(y){
     if (y>x) return false
       else if (y<x) return true
 	else return null;
     
-  })()
+  })
   return res;
   
 }
