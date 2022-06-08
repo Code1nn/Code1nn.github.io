@@ -77,7 +77,7 @@ function printNumbers(num,cols) {
   let k=0;
   if (num % cols ==0) rows = num/cols;
 	else rows = (Math.trunc(num/cols) + 1);
-  for(i=0; i<rows; i++){
+  for(i=1; i<=rows; i++){
 	  for(j=0; j<cols; j++){
 		  str+=k+" ";
 		  k++;
