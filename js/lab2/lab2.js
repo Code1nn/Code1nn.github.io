@@ -71,14 +71,14 @@ function compare(x){
  */
 function printNumbers(num,cols) {
   let rows;
-  let str;
+  let str="";
   let i;
   let j;
   let k=0;
   if (num % cols ==0) rows = num/cols;
 	else rows = (Math.trunc(num/cols) + 1);
   for(i=1; i<=rows; i++){
-	  for(j=0; j<cols; j++){
+	  for(j=1; j<=cols; j++){
 		  str+=k+" ";
 		  k++;
 		  if (k>=num) break;
