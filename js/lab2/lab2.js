@@ -80,8 +80,8 @@ function printNumbers(num,cols) {
   for(i=0; i<rows; i++){
 	  k=i;
 	  for(j=0; j<cols; j++){
-		  str+=(k)+" ";
-		  k+=rows;
+		  str+=k+" ";
+		  k=k+rows;
 		  if (k>=num) break;
 	  }
 	  
