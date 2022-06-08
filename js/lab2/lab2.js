@@ -82,7 +82,7 @@ function printNumbers(num,cols) {
 	  for(j=0; j<cols; j++){
 		  str+=k+" ";
 		  k=k+rows;
-		  if (k>=num) break;
+		  if (k>num) break;
 	  }
 	  
 	  console.log(str);
