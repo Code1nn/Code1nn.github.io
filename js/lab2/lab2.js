@@ -56,8 +56,8 @@ function factorial(n){
 function compare(x){
   let res=(function(){
     let y=5;
-    if (y>x) return true
-      else if (y<x) return false
+    if (y>x) return false
+      else if (y<x) return true
 	else return null;
     
   })()
