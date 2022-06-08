@@ -65,8 +65,8 @@ function camelize(str) {
  * @returns number
  */
  function fib(p){
-        let a = 0;
-        let b = 1;
+        let a = 0n;
+        let b = 1n;
         //Исключения
         if (p==0) return 0;
         if (p==1) return 1;
