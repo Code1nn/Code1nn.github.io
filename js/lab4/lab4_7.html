@@ -19,7 +19,7 @@
                 if (mm < 10) mm = '0' + mm;
     
                 let yy = date.getFullYear() ;
-                if (yy < 10) yy = '0' + yy;
+                yy=yy%100;
     
                 return dd + '.' + mm + '.' + yy;
             }
