@@ -86,15 +86,13 @@ function camelize(str) {
     let a = [];
     let str = '';
     if (!Number.isNaN(N))
-        if (N == 0) str = 0;
-        else
             for (let p = 0; p < N; ++p) {
                 a[p] = fib(p);
-                str += a[p] + ' ';
+                str += a[p];
             }
-    else str = NaN;
+    else a = NaN;
  
-    return str;
+    return a;
  }
 /**
  * возвращает reverse массив
