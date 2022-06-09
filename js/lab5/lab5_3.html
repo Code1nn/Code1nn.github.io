@@ -46,20 +46,13 @@
     </ul>
     
     <script>
-        (function() {
 	        let li = document.body.getElementsByTagName("li");
 
 	        for (let i = 0; i < li.length; i++) {
-
-	 	    let num = li[i].getElementsByTagName("li").length;
-	 	    let name = li[i].firstChild.nodeValue.trim();
-
-	 	    console.log(`${name}: ${num}`);
+	        	let num = li[i].getElementsByTagName("li").length;
+			let name = li[i].firstChild.nodeValue.trim();
+	        	console.log(`${name}: ${num}`);
 	    }
-
-
-
-    }());
     </script>
 </body>
 </html>
