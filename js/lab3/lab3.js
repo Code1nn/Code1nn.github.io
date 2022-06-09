@@ -59,7 +59,14 @@ function camelize(str) {
     }
     return str;
 }
+
 /**
+ * возвращает массив заполненый числами фиббоначи до n-1'го номера
+ * @param {number} N номер числа фиббоначи
+ * @returns string
+ */
+ function fibs(N) {
+     /**
  * возвращает число последовательности фиббоначи
  * @param {number} p номер числа фиббоначи
  * @returns number
@@ -77,18 +84,10 @@ function camelize(str) {
         }
         return b;
       }
-/**
- * возвращает массив заполненый числами фиббоначи до n-1'го номера
- * @param {number} N номер числа фиббоначи
- * @returns string
- */
- function fibs(N) {
     let a = [];
-    let str = '';
     if (!Number.isNaN(N))
             for (let p = 0; p < N; ++p) {
                 a[p] = fib(p);
-                str += a[p];
             }
     else a = NaN;
  
