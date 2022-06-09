@@ -75,8 +75,8 @@ function camelize(str) {
         let a = 0n;
         let b = 1n;
         //Исключения
-        if (p==0) return 0;
-        if (p==1) return 1;
+        if (p==0) return a;
+        if (p==1) return b;
         for (let i = 2; i <= p; i++) {
           let c = a + b;
           a = b;
