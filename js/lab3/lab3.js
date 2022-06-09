@@ -89,7 +89,7 @@ function camelize(str) {
             for (let p = 0; p < N; ++p) {
                 a[p] = fib(p);
             }
-    else a = NaN;
+    else return NaN;
  
     return a;
  }
