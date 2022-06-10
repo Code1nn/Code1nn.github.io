@@ -99,8 +99,8 @@ function camelize(str) {
  */
 function arrReverseSorted(arr){
 let arr_reserve=[];
+arr_reserve=arr.slice();
 
-arr_reserve=arr;
     arr_reserve.sort((a, b) => b - a);
 
 alert(arr_reserve);
