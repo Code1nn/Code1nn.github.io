@@ -1,6 +1,6 @@
 <?php
-  $m = 1; //warning
-  $n = 5; //fatal error!
+  $m = 3; //warning
+  $n = 3; //fatal error!
   $count = 0; // счётчик коммитов
   echo "You have $n fatal errors and $m warning<br>";
   /*
@@ -32,7 +32,7 @@
           $n -= 2;
           $count++;
       }
-      echo "Congratulation, you have $n fatal errors and $m warning after $count commits";
+      echo $count;
   } else //иначе уже нельзя будет исправить код :(
-    echo "You can NOT fix it!!!";
+    echo -1;
 ?>
