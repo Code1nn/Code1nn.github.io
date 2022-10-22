@@ -1,8 +1,18 @@
+<form action="number2.php" method="post">
+ <p>введите кол-во ворнингов: <input type="int" name="warning" value=0 /></p>
+ <p>Введите кол-во фатальных ошибок: <input type="int" name="error" value=0 /></p>
+ <p><input type="submit" /></p>
+</form>
 <?php
-  $m = 3; //warning
-  $n = 3; //fatal error!
+
+  $m = 0; //
+  $n = 0;//начальные значения
+  
+  $m = $_POST["warning"];//warning
+  $n = $_POST["error"]; //fatal error!
+  
   $count = 0; // счётчик коммитов
-  echo "You have $n fatal errors and $m warning<br>";
+  
   /*
   суть алгоритма такова: сначала увеличиваем кол-во ворнингов до такого количества, чтобы при превращении их в 
   фатальные ошибки мы смогли получить чётное кол-во фатальных ошибок
@@ -33,6 +43,5 @@
           $count++;
       }
       echo $count;
-  } else //иначе уже нельзя будет исправить код :(
-    echo -1;
+  } else echo -1;
 ?>
