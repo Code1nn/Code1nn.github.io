@@ -5,9 +5,6 @@
 </form>
 <?php
 
-  $m = 0; //
-  $n = 0;//начальные значения
-  
   $m = $_POST["warning"];//warning
   $n = $_POST["error"]; //fatal error!
   
