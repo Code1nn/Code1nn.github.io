@@ -4,8 +4,11 @@
  <p><input type="submit" /></p>
 </form>
 <?php
-$m = $_POST["warning"]; //warning
-$n = $_POST["error"]; //fatal error!
+if (!empty($_POST)) // проверка на ввод в форму чисел
+{
+   $m = $_POST["warning"]; //warning
+   $n = $_POST["error"]; //fatal error!
+} else exit('Введите числа в форму');
 $count = 0; // счётчик коммитов
 /*
   суть алгоритма такова: сначала увеличиваем кол-во ворнингов до такого количества, чтобы при превращении их в 
