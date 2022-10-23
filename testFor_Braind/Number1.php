@@ -3,28 +3,22 @@
     
     $articleLink = 'https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%8B%D0%BA%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%91%D0%B6';
     
-    $articlePreview = mb_substr($articleText, 0, 200);
+    $intermediate = explode(" ",mb_substr($articleText, 0, 200)); // вспомогательный массив, нужен для отделения трёх последних слов строки
     
-    $substr = '';//вспомогательная строка, в ней будем объединять эл-ты строки
-    
-    $intermediate = explode(" ",$articlePreview); // вспомогательный массив, нужен для отделения трёх последних слов строки
+    $articlePreview = '';
     
     for ($i = 0; $i <count($intermediate)-3; $i++)
     {
-        $substr .= $intermediate[$i].' ';
+        $articlePreview .= $intermediate[$i].' '; //заполняем превью словами, исключая последние 3
     }
-    
-    $substr .= "<a href = '$articleLink'>";//вставляем ссылку
-    
-    $substr .= $intermediate[count($intermediate)-3]; //далее записываем три последних слова
-    
-    $substr .= ' '.$intermediate[count($intermediate)-2];
-    
-    $substr .= ' '.$intermediate[count($intermediate)-1];
-    
-    $substr .= '&hellip;</a>'; //закрываем ссылку
-    
-    $articlePreview = $substr;
+    //вставляем ссылку
+    $articlePreview .= "<a href = '$articleLink'>";
+    //далее записываем три последних слова
+    $articlePreview .= $intermediate[count($intermediate)-3];
+    $articlePreview .= ' '.$intermediate[count($intermediate)-2];
+    $articlePreview .= ' '.$intermediate[count($intermediate)-1];
+    //вставляем многоточие и закрываем ссылку
+    $articlePreview .= '&hellip;</a>';
     
     echo $articlePreview;
     
